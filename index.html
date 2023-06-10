@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="title-header" id="title">freeCodeCamp Surver Form</h1>
+    <p class="text-header" id="description">Thank you for visiting our website.</p>
+    <form method="post" action='http://htmlbook.ru/html/select' id="survey-form">
+      <fieldset>
+        <label for="first-name" id="name-label">Enter Your First Name: <input id="name" name="name" type="text" required  placeholder="Enter your Name"/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required   placeholder="Enter your Email"/></label>
+        <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="age" min="18" max="120" placeholder="Enter your Age" /></label>
+		<label>
+			<p>Which option best describes your current role?</p>
+			<select id="dropdown" name="role" id="role" class="your-role" required>
+				<option value="role">Select current role</option>
+				<option value="student">Student</option>
+				<option value="job">Full Time Job</option>
+				<option value="learner">Full Time Learner</option>
+				<option value="preferNo">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>
+		</label>
+      </fieldset>
+      <fieldset>
+		<p>Would you recommend us to your friend?</p>
+        <label for="Definitely"><input id="Definitely" type="radio" name="question recommendation for friends" class="inline" value="Definitely" />Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="question recommendation for friends" class="inline" value="Maybe"/>Maybe</label>
+        <label for="not sure"><input id="not sure" type="radio" name="question recommendation for friends" class="inline"  value="Not sure"/>Not sure</label>
+      </fieldset>
+      <fieldset>
+		<p>What is your favorite feature of freeCodeCamp?</p>
+		<select name="favorite" id="favorite">
+			<option value="role">Select current role</option>
+			<option value="student">challenges</option>
+			<option value="job">project</option>
+			<option value="community">Community</option>
+			<option value="openSource">Open Source</option>
+			<option value="other">Other</option>
+		</select>
+		</fieldset>
+		<fieldset  class="improved">
+			<p>  What would you like to see improved?</p>
+			<label class="checkbox-label">Front-end Projects
+				<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			  
+			<label class="checkbox-label">Back-end Projects 
+				<input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+
+			<label class="checkbox-label">Data Visualization
+				<input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Data Visualization
+				<input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Challenges
+				<input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Open Source Community
+				<input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Gitter help rooms
+				<input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Videos
+				<input name="prefer" value="videos" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">City Meetups
+				<input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Wiki
+				<input name="prefer" value="wiki" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Forum
+				<input name="prefer" value="forum" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label class="checkbox-label">Additional Courses
+				<input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">
+				<span class="checkmark"></span>
+			</label>
+		</fieldset>
+		<fieldset>
+			<label for="referrer">How did you hear about us?
+			<select id="referrer" name="referrer">
+				<option value="0">(select one)</option>
+				<option value="1">freeCodeCamp News</option>
+				<option value="2">freeCodeCamp YouTube Channel</option>
+				<option value="3">freeCodeCamp Forum</option>
+				<option value="4">Other</option>
+			</select>
+        </label>
+		</fieldset>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      	<input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
